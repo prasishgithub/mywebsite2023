@@ -52,6 +52,10 @@
         <a class="link" href="#projects" data-scroll>Projects</a>
         <a class="link" href="#privacy_policy" data-scroll>Privacy Policy</a>
       </div>
+      <div class="header-links2">
+      
+        <a class="link" href="#blog" data-scroll>Blogs</a>
+      </div>
     </div>
     <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
   </div>
@@ -278,6 +282,103 @@
   <script type="module" src="https://unpkg.com/@ionic/core
   <script src="./assets/js/main.js"></script>
   -->
+   <section id="blog">
+    <div class="user-details">
+      <h1>Blog</h1>
+    </div>
+     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .blog-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recent-blog {
+            margin-bottom: 20px;
+        }
+
+        .blog-list {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .blog-card {
+            width: 250px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 10px;
+        }
+
+        .keep-reading-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blog-section">
+        <div class="recent-blog">
+            <h2>Recently Written Blog</h2>
+            <!-- Content of the recently written blog goes here -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <a class="keep-reading-btn" href="#">Keep Reading</a>
+        </div>
+
+        <h2>Previously Written Blogs</h2>
+        <div class="blog-list">
+            <div class="blog-card">
+                <img src="blog1.jpg" alt="Blog 1">
+                <div class="blog-content">
+                    <h3>Blog Title 1</h3>
+                    <p>Short description of the blog...</p>
+                    <a class="keep-reading-btn" href="#">Keep Reading</a>
+                </div>
+            </div>
+
+            <!-- Repeat the above blog-card structure for each previously written blog -->
+
+        </div>
+    </div>
+
+</body>
+ </section>
+
+  
 
   <section id="privacy_policy">
     <div class="user-details">
