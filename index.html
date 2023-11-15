@@ -306,9 +306,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .recent-blog {
-            margin-bottom: 20px;
-        }
 
         .blog-list {
             display: flex;
@@ -351,11 +348,7 @@
 </head>
 <body>
 
-    <div class="blog-section">
-        <div class="recent-blog">
-            <h2>Recently Written Blog</h2>
-            <!-- Content of the recently written blog goes here -->
-            <div>
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -397,121 +390,7 @@
     </style>
 </head>
 
-<body>
 
-    <h1>Introduction</h1>
-    <p>Text is a fundamental element in any user interface, and Flutter provides a variety of widgets to handle text rendering and styling. This documentation note will cover the core text-related widgets in Flutter, including <code>Text</code>, <code>DefaultTextStyle</code>, <code>RichText</code>, and various text styling techniques.</p>
-
-    <h2>Text Widget</h2>
-    <p>The <code>Text</code> widget is the most basic widget for displaying a string of text in Flutter. It renders a simple run of text with a single style. You can create a <code>Text</code> widget as follows:</p>
-
-    <pre>
-&lt;Text&gt;('Hello, Flutter!',
-  style: TextStyle(fontSize: 20, color: Colors.black),
-)&lt;/Text&gt;
-    </pre>
-
-    <h2>Text Widget Constructor</h2>
-    <p>By customizing the <code>Text</code> widget’s properties, you can control the appearance, behavior, and accessibility of your text elements to provide an engaging and user-friendly experience.</p>
-
-    <pre>
-&lt;Text&gt;(
-  String data,
-  {
-    Key? key,
-    TextStyle? style,
-    TextAlign? textAlign,
-    TextDirection? textDirection,
-    Locale? locale,
-    bool softWrap = true,
-    TextOverflow? overflow,
-    double textScaleFactor,
-    int? maxLines,
-    String semanticsLabel,
-    TextWidthBasis textWidthBasis,
-    TextHeightBehavior? textHeightBehavior,
-  }
-)&lt;/Text&gt;
-    </pre>
-
-    <h2>Styling Text</h2>
-    <p>The <code>style</code> property allows you to apply various text styles to the text, such as font size, color, font family, and more.</p>
-
-    <h2>DefaultTextStyle Widget</h2>
-    <p>The <code>DefaultTextStyle</code> widget sets a default text style that its descendants inherit unless they explicitly define their own style. This is useful when you want to apply a consistent style to a group of text widgets.</p>
-
-    <pre>
-&lt;DefaultTextStyle&gt;(
-  style: TextStyle(fontSize: 18, color: Colors.blue),
-  child: Text('This text inherits the default style'),
-)&lt;/DefaultTextStyle&gt;
-    </pre>
-
-    <h2>RichText Widget</h2>
-    <p>The <code>RichText</code> widget is used for displaying text with multiple styles within the same widget. You can use <code>TextSpan</code> objects to define different styles for different parts of the text.</p>
-
-    <pre>
-&lt;RichText&gt;(
-  text: TextSpan(
-    text: 'Hello',
-    style: TextStyle(fontSize: 16, color: Colors.red),
-    children: &lt;TextSpan&gt;[
-      TextSpan(
-        text: ' Flutter',
-        style: TextStyle(fontSize: 20, color: Colors.blue),
-      ),
-    ],
-  ),
-)&lt;/RichText&gt;
-    </pre>
-
-    <h2>Styling First Letter</h2>
-    <p>To make the first letter of a <code>Text</code> widget bold, you can use a <code>RichText</code> widget with two <code>TextSpan</code> objects, one for the first letter with a bold style and another for the rest of the text.</p>
-
-    <pre>
-&lt;RichText&gt;(
-  text: TextSpan(
-    text: 'F', // First letter
-    style: TextStyle(
-      fontSize: 20,
-      color: Colors.black,
-      fontWeight: FontWeight.bold,
-    ),
-    children: &lt;TextSpan&gt;[
-      TextSpan(
-        text: 'lutter', // Rest of the text
-        style: TextStyle(fontSize: 20, color: Colors.black),
-      ),
-    ],
-  ),
-)&lt;/RichText&gt;
-    </pre>
-
-    <h2>Ignoring Text Styling</h2>
-    <p>If you want to ignore specific parts of a <code>DefaultTextStyle</code> or <code>RichText</code> styling, you can use the <code>inherit</code> property and set it to <code>false</code> for the relevant text widget.</p>
-
-    <pre>
-&lt;DefaultTextStyle&gt;(
-  style: TextStyle(fontSize: 16, color: Colors.red),
-  child: Column(
-    children: &lt;Widget&gt;[
-      Text('This text inherits the default style'),
-      Text(
-        'This text does not inherit',
-        style: TextStyle(inherit: false),
-      ),
-    ],
-  ),
-)&lt;/DefaultTextStyle&gt;
-    </pre>
-
-    <h2>Additional Text Widgets</h2>
-    <p>Flutter provides other text-related widgets like <code>TextField</code> for user input, <code>TextFormField</code> for form fields, and <code>TextButton</code> for text-based buttons. These widgets offer various functionalities and are useful for building rich text-based interfaces.</p>
-
-    <h2>Conclusion</h2>
-    <p>Flutter offers a variety of text-related widgets and styling options to help you create beautiful and functional text elements within your app.</p>
-
-</body>
 </div>
 
 
