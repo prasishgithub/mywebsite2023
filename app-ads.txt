@@ -1,4 +1,5 @@
 google.com, pub-8856981411004541, DIRECT, f08c47fec0942fa0
+
 #Ad.Plus
 ad.plus, 23189908884, DIRECT
 google.com, pub-4573231550355221, RESELLER, f08c47fec0942fa0
@@ -12,7 +13,6 @@ video.unrulymedia.com, 895733750, DIRECT
 sovrn.com, 357833, DIRECT, fafdf38b16bf6b2b
 lijit.com, 357833, DIRECT, fafdf38b16bf6b2b
 lijit.com, 357833-eb, DIRECT, fafdf38b16bf6b2b
-
 
 # chocolateplatform
 chocolateplatform.com, 20552, RESELLER, 49a66ce31a704197
@@ -31,7 +31,7 @@ rubiconproject.com, 11006, RESELLER, 0bfd66d529a55807
 google.com, pub-3769010358500643, RESELLER, f08c47fec0942fa0
 freewheel.tv, 20393, RESELLER
 freewheel.tv, 24377, RESELLER
-yahoo.com, 58905, RESELLER e1a5b5b6e3255540
+yahoo.com, 58905, RESELLER, e1a5b5b6e3255540
 aol.com, 58905, RESELLER, e1a5b5b6e3255540
 zeststack.com, 396, RESELLER
 pubmatic.com, 161995, RESELLER, 5d62403b186f2ace
@@ -46,7 +46,7 @@ video.unrulymedia.com, 4270213217, RESELLER
 pubmatic.com, 161648, RESELLER, 5d62403b186f2ace
 Contextweb.com, 562718, RESELLER, 89ff185a4c4e857c
 taipeidigital.com, 1122, RESELLER
-eskimi.com,2020000032, RESELLER
+eskimi.com, 2020000032, RESELLER
 adzvigo.com, b83aac23b9528732c23cc7352950e88031818, RESELLER
 bidvol.com, RESELLER, 93287
 dragon-advertising.com, 44f683a84163b3523afe57c2e008bc8c8283, RESELLER
