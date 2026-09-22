@@ -19,7 +19,41 @@
 
 /* ---------- tokens ---------- */
 
+/* Dark is the default theme for everyone. Light applies only when the
+   visitor chooses it with the toggle (data-theme="light"). */
+
 :root {
+  --bg: #080b13;
+  --bg-2: #0c111c;
+  --surface: #0f1522;
+  --surface-2: #161d2d;
+  --ink: #eaeef6;
+  --ink-2: #b6bfd0;
+  --muted: #8690a5;
+  --rule: #1f2738;
+  --rule-strong: #2c3650;
+  --accent: #6d9bff;
+  --accent-2: #2dd4bf;
+  --accent-ink: #06101f;
+  --accent-soft: #14213d;
+  --ok: #34d399;
+  --grad: linear-gradient(120deg, #6d9bff 0%, #2dd4bf 100%);
+  --focus: #8fb3ff;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px -8px rgb(0 0 0 / 50%);
+  --shadow-lg: 0 2px 4px rgb(0 0 0 / 40%), 0 24px 48px -16px rgb(0 0 0 / 70%);
+  --term-bg: #060912;
+  color-scheme: dark;
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --wrap: 72rem;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans Devanagari", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --term-ink: #d6deeb;
+}
+
+:root[data-theme="light"] {
   --bg: #f6f7fb;
   --bg-2: #eef1f7;
   --surface: #ffffff;
@@ -48,56 +82,6 @@
   --term-bg: #0b1020;
   --term-ink: #d6deeb;
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #080b13;
-    --bg-2: #0c111c;
-    --surface: #0f1522;
-    --surface-2: #161d2d;
-    --ink: #eaeef6;
-    --ink-2: #b6bfd0;
-    --muted: #8690a5;
-    --rule: #1f2738;
-    --rule-strong: #2c3650;
-    --accent: #6d9bff;
-    --accent-2: #2dd4bf;
-    --accent-ink: #06101f;
-    --accent-soft: #14213d;
-    --ok: #34d399;
-    --grad: linear-gradient(120deg, #6d9bff 0%, #2dd4bf 100%);
-    --focus: #8fb3ff;
-    --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
-    --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px -8px rgb(0 0 0 / 50%);
-    --shadow-lg: 0 2px 4px rgb(0 0 0 / 40%), 0 24px 48px -16px rgb(0 0 0 / 70%);
-    --term-bg: #060912;
-    color-scheme: dark;
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #080b13;
-  --bg-2: #0c111c;
-  --surface: #0f1522;
-  --surface-2: #161d2d;
-  --ink: #eaeef6;
-  --ink-2: #b6bfd0;
-  --muted: #8690a5;
-  --rule: #1f2738;
-  --rule-strong: #2c3650;
-  --accent: #6d9bff;
-  --accent-2: #2dd4bf;
-  --accent-ink: #06101f;
-  --accent-soft: #14213d;
-  --ok: #34d399;
-  --grad: linear-gradient(120deg, #6d9bff 0%, #2dd4bf 100%);
-  --focus: #8fb3ff;
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
-  --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px -8px rgb(0 0 0 / 50%);
-  --shadow-lg: 0 2px 4px rgb(0 0 0 / 40%), 0 24px 48px -16px rgb(0 0 0 / 70%);
-  --term-bg: #060912;
-  color-scheme: dark;
 }
 
 /* ---------- base ---------- */
@@ -178,13 +162,9 @@ strong { font-weight: 650; }
 .nav-toggle:hover, .theme-toggle:hover { border-color: var(--rule-strong); }
 .nav-toggle { display: none; margin-left: auto; }
 .nav-toggle svg, .theme-toggle svg { width: 19px; height: 19px; }
-.theme-toggle .sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .sun { display: block; }
-:root[data-theme="dark"] .theme-toggle .moon { display: none; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .sun { display: block; }
-  :root:not([data-theme="light"]) .theme-toggle .moon { display: none; }
-}
+.theme-toggle .moon { display: none; }
+:root[data-theme="light"] .theme-toggle .moon { display: block; }
+:root[data-theme="light"] .theme-toggle .sun { display: none; }
 
 @media (max-width: 56rem) {
   .nav-toggle { display: inline-grid; }
@@ -263,9 +243,8 @@ strong { font-weight: 650; }
 }
 .btn:hover { border-color: var(--rule-strong); transform: translateY(-2px); box-shadow: var(--shadow); text-decoration: none; }
 .btn svg { width: 18px; height: 18px; flex: none; }
-.btn-primary { background: var(--grad); border-color: transparent; color: #fff; }
-:root[data-theme="dark"] .btn-primary { color: #06101f; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-primary { color: #06101f; } }
+.btn-primary { background: var(--grad); border-color: transparent; color: #06101f; }
+:root[data-theme="light"] .btn-primary { color: #fff; }
 .btn-primary:hover { border-color: transparent; }
 
 /* photo + terminal */
@@ -458,10 +437,8 @@ section { padding: 4.5rem 0; }
   background: var(--surface-2); border: 1px solid var(--rule); border-radius: 999px; padding: 0.32rem 0.75rem;
 }
 
-:root[data-theme="dark"] .invert-dark { filter: invert(1); }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .invert-dark { filter: invert(1); }
-}
+.invert-dark { filter: invert(1); }
+:root[data-theme="light"] .invert-dark { filter: none; }
 
 /* ---------- apps ---------- */
 
