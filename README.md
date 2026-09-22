@@ -31,7 +31,7 @@ content, images and URLs are carried over.
 | `/#privacy_policy_kids` | Full children's privacy policy, inline on the home page |
 | `/google58bd251f5c47639c.html` | Google Search Console verification, unchanged |
 | `/full_blog1.html`, `/text_flutter.html` | Were empty; now redirect to the home page |
-| `/assets/...` | Every original image, font, script and stylesheet is still at its original path |
+| `/assets/...` | Images still in use keep their original paths; unused 2023 template files were removed (recoverable from git history) |
 
 ## Running it
 
