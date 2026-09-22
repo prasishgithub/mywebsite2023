@@ -103,6 +103,23 @@
     }
   }
 
+  // Email addresses are split into data-u/data-d and written as
+  // "name [at] domain" so scrapers reading the raw HTML find no address.
+  // Here they are reassembled into real mailto: links. Without JavaScript
+  // the address is still on the page, readable and copyable.
+  var mails = document.querySelectorAll('a.mail[data-u][data-d]');
+  Array.prototype.forEach.call(mails, function (a) {
+    var addr = a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+    a.setAttribute('href', 'mailto:' + addr);
+    var walker = document.createTreeWalker(a, NodeFilter.SHOW_TEXT, null, false);
+    var node;
+    while ((node = walker.nextNode())) {
+      if (node.data.indexOf(' [at] ') !== -1) {
+        node.data = node.data.replace(' [at] ', '@');
+      }
+    }
+  });
+
   // Footer year.
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
