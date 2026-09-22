@@ -1,84 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        hr {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border: 0;
-            border-top: 1px solid #eee;
-        }
-
-        footer {
-            margin-top: 20px;
-            text-align: center;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Color Blind Test</title>
+<style>
+  :root {
+    --ink: #16181d;
+    --muted: #5a6172;
+    --rule: #e3e6ec;
+    --bg: #ffffff;
+    --panel: #f7f8fa;
+    --accent: #5b5bd6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8eaf0;
+      --muted: #a2a9ba;
+      --rule: #2a2e39;
+      --bg: #14161b;
+      --panel: #1c1f27;
+      --accent: #9a9aff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; margin: 2.75rem 0 .75rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule); letter-spacing: -.01em;
+  }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .4rem; }
+  p, li { color: var(--ink); }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0 0 1.75rem; }
+  .meta strong { color: var(--ink); font-weight: 600; }
+  .lede {
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 1.1rem 1.25rem; margin: 0 0 1.5rem;
+  }
+  .lede p { margin: 0 0 .75rem; }
+  .lede p:last-child { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.25rem; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; white-space: nowrap; }
+  td:first-child { white-space: normal; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em; background: var(--panel); padding: .1rem .35rem;
+    border-radius: 4px; border: 1px solid var(--rule); word-break: break-word;
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  .note {
+    border-left: 3px solid var(--accent); background: var(--panel);
+    padding: .85rem 1rem; margin: 1.25rem 0; border-radius: 0 8px 8px 0;
+  }
+  .note p { margin: 0; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  .scroller { overflow-x: auto; }
+  @media (max-width: 30rem) {
+    .wrap { padding: 1.75rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>We understand the importance of your privacy and take great care to protect your information for every product and service we offer. This is what we collect, how we handle it, and the measures we take to keep it safe.</p>
+<div class="wrap">
 
-        <h2>Data We Collect</h2>
-        <p>We may collect personal information such as your name, email, phone number, and address, as well as business information. This is so we can keep you informed about the latest updates and new products. Please rest assured that we never sell your information under any circumstances.</p>
+<h1>Privacy Policy</h1>
+<p class="meta">
+  <strong>App:</strong> Color Blind Test — Ishihara<br>
+  <strong>Package:</strong> <code>com.mobileappmentor.color_blind_test_ishihara</code><br>
+  <strong>Developer:</strong> Prasish Sharma<br>
+  <strong>Last updated:</strong> 22 September 2026
+</p>
 
-        <h2>Security</h2>
-        <p>As a tech enthusiast, we strive to provide you with the highest level of security possible. However, please keep in mind that no method of transmitting information over the internet or storing it electronically can be 100% secure and reliable. Therefore, we cannot guarantee absolute security.</p>
+<div class="lede">
+  <p><strong>The short version.</strong> We run no servers, there are no accounts,
+  and we receive nothing about you. <strong>Your colour vision test result is never
+  saved to your device and never leaves it</strong> — it exists only while the app is
+  open, and it is gone the moment you close it.</p>
+  <p>The app is free and paid for by advertising. Advertising is the one thing
+  that sends data off your device: Google AdMob and the ad networks bidding
+  through it collect an advertising identifier and related technical information
+  in order to show, measure and protect the ads. That is the whole of it, and
+  the rest of this page describes it in full.</p>
+</div>
 
-        <h2>Third-Party Ads Integration</h2>
-        <p>We might show you ads through third-party advertising services. These services may gather details about your device, location, and web browsing history, including when you visit our site or other websites and apps.</p>
+<h2>1. What we collect ourselves</h2>
+<p><strong>Nothing.</strong></p>
+<p>We operate no servers, run no analytics, and have no way to receive data about
+you. There is no sign-in, no account, no profile and no cloud backup.</p>
 
-        <p>Third-party services include:</p>
-        <ul>
-            <li>Google Play Services</li>
-            <li>Google Analytics for Firebase</li>
-            <li>AdMob</li>
-            <li>Firebase Crashlytics</li>
-            <li>Facebook</li>
-        </ul>
+<h3>Your test results are not stored at all</h3>
+<p>This is stronger than "kept private on your device". The app has no history
+feature, and a completed test is never written to storage of any kind. Your
+answers, your score, your classification and the plate-by-plate breakdown live
+in memory for as long as the result is on screen, and are discarded when you
+leave it. There is no file to find, no database to read, and nothing to delete.</p>
 
-        <h2>Changes to This Privacy Policy</h2>
-        <p>Our Privacy Policy may be updated periodically, so we recommend that you check this page regularly for any changes. We will inform you of any updates by posting the new Privacy Policy on this page. This policy will be effective starting from November 7, 2023.</p>
+<h3>What is stored on your device</h3>
+<p>Only your preferences, in the app's own private storage:</p>
+<div class="scroller">
+<table>
+  <tr><th>Setting</th><th>What it is</th></tr>
+  <tr><td>Theme</td><td>Light, dark or system</td></tr>
+  <tr><td>Language</td><td>Your chosen language, or system default</td></tr>
+  <tr><td>Test length</td><td>Full, screening or quick</td></tr>
+  <tr><td>Timer</td><td>Whether the timed mode is on</td></tr>
+  <tr><td>Calibration state</td><td>Whether you completed the optional brightness check, and whether you acknowledged the colour-filter warning</td></tr>
+  <tr><td>First-run flag</td><td>Whether the app has been opened before</td></tr>
+</table>
+</div>
+<p>None of it identifies you, none of it is transmitted anywhere, and uninstalling
+the app removes all of it. We cannot read it. We do not sell data, because we do
+not have any.</p>
 
-        <h2>Contact Us</h2>
-        <p>We are always happy to hear from you, whether you have questions or suggestions about our Privacy Policy. Please don’t hesitate to reach out to us at the following contact information:</p>
+<h3>The PDF report</h3>
+<p>If you choose to save your result as a PDF, the file is built entirely on your
+device. It is written to the folder you pick, under the filename you choose,
+using Android's system file picker. It is never uploaded anywhere. If you then
+share it, it goes wherever <em>you</em> send it and nowhere else.</p>
 
-        <ul>
-            <li>Email: <a href="mailto:prasishsharma4@gmail.com">mobileappmentor@gmail.com</a></li>
-            <li>Address: Pokhara, Nepal</li>
-        </ul>
-    </div>
+<h3>The ambient light sensor</h3>
+<p>If your device has a light sensor, the app takes a single reading when a test
+starts, to note whether the room was bright enough for a reliable result. The
+value is used to annotate that result and is never stored or transmitted. Devices
+without the sensor skip it silently; no permission is required for this, and none
+is requested.</p>
 
-    <hr>
+<h2>2. What our advertising partners collect</h2>
+<p>The app shows ads through Google AdMob. AdMob runs an auction for each ad slot,
+and the following partners may take part in that auction and receive data as part
+of it:</p>
+<ul>
+  <li><strong>Google AdMob / Google Ads</strong> (always)</li>
+  <li><strong>Unity Ads</strong></li>
+  <li><strong>ironSource</strong> (Unity LevelPlay)</li>
+  <li><strong>InMobi</strong></li>
+  <li><strong>Liftoff Monetize</strong> (Vungle)</li>
+  <li><strong>Meta Audience Network</strong></li>
+</ul>
+<p>The app's <a href="https://play.google.com/store/apps/details?id=com.mobileappmentor.color_blind_test_ishihara">Google Play Data safety section</a>
+is the authoritative statement of what this app collects.</p>
 
-    <footer>
-        <p>&copy; 2026 Prasish Sharma. All rights reserved.</p>
-    </footer>
+<p>Through the Google Mobile Ads SDK and these partners, the following is
+collected from your device and shared with them:</p>
+<div class="scroller">
+<table>
+  <tr><th>What</th><th>Why it is collected</th></tr>
+  <tr>
+    <td>Device or other identifiers — your Android advertising ID (AAID), app set ID, and similar SDK-level identifiers</td>
+    <td>Selecting and showing ads, capping how often you see the same ad, measuring ads, and detecting ad fraud</td>
+  </tr>
+  <tr>
+    <td>Approximate location — estimated from your IP address, never from your device's location sensors</td>
+    <td>Showing ads that are legal and relevant in your country or region, and detecting ad fraud</td>
+  </tr>
+  <tr>
+    <td>App interactions — app opens, ad impressions, ad clicks, session length</td>
+    <td>Showing and measuring ads</td>
+  </tr>
+  <tr>
+    <td>Diagnostics — crash logs, performance data, device model, OS version, screen size, language, network type</td>
+    <td>Rendering ads correctly, keeping the SDKs working, and detecting ad fraud</td>
+  </tr>
+</table>
+</div>
+<p>All of it is sent over an encrypted (HTTPS/TLS) connection.</p>
+
+<div class="note">
+  <p><strong>Your test result is not part of this.</strong> No advertising partner
+  receives your answers, your score, your classification, or any indication of
+  whether the app found a colour vision deficiency. Ads are not targeted on the
+  basis of your result, and the result is never sent anywhere — it is not stored
+  for long enough to be.</p>
+</div>
+
+<p>The app requests only family-safe ad content (AdMob's most restrictive content
+rating), and does not declare child-directed treatment, because it is a
+general-audience tool.</p>
+
+<p>For what Google does with this data, see
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>
+and <a href="https://support.google.com/admob/answer/9012903">Google's advertising partners</a>.
+Each partner's own policy:
+<a href="https://unity.com/legal/privacy-policy">Unity / ironSource</a>,
+<a href="https://www.inmobi.com/privacy-policy">InMobi</a>,
+<a href="https://liftoff.io/privacy-policy/">Liftoff Monetize</a>,
+<a href="https://www.facebook.com/privacy/policy/">Meta</a>.</p>
+
+<h2>3. Your choices and your rights</h2>
+
+<h3>Consent</h3>
+<p>Where the law requires it — the European Economic Area, the United Kingdom,
+Switzerland, and several US states — the app shows Google's certified consent
+form (the Google User Messaging Platform, an IAB TCF v2 Consent Management
+Platform) the first time you run it. You decide there whether your data may be
+used for personalised advertising, and <strong>nothing is requested from any ad
+network until you have</strong>.</p>
+<p>Your decision is forwarded to every advertising partner listed above, not just
+to Google. If you refuse, the app keeps working and you will see non-personalised
+ads instead.</p>
+<p>You can change that decision at any time, from inside the app, at
+<strong>Settings → Privacy options</strong>. Where a form is required by law, that
+row is always present, and changing your answer takes effect immediately.</p>
+
+<h3>Your advertising ID</h3>
+<p>Android lets you reset your advertising ID, or delete it altogether, from
+<strong>Settings → Privacy → Ads</strong> (<strong>Settings → Google → Ads</strong> on
+some devices). Deleting it stops this app and its advertising partners receiving
+it at all.</p>
+
+<h3>US state privacy rights</h3>
+<p>Where you have a right to opt out of the "sale" or "sharing" of your personal
+information, the consent form above records it and we forward that signal to
+every advertising partner that accepts one. We do not sell or share data
+ourselves, because we never receive any.</p>
+
+<h3>EEA / UK rights</h3>
+<p>Because we receive no personal data, we are not in a position to access,
+correct, port or erase anything about you — there is nothing held. For the data
+processed by Google and the advertising partners above, those companies are the
+controllers and their own policies (linked in section 2) describe how to exercise
+your rights with them. Withdrawing consent through Settings → Privacy options
+stops personalised processing for the future.</p>
+
+<h2>4. Permissions this app asks for</h2>
+<p>The complete list, and nothing else is requested:</p>
+<div class="scroller">
+<table>
+  <tr><th>Permission</th><th>What it is for</th></tr>
+  <tr>
+    <td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
+    <td>Loading ads and the consent form. Nothing else in the app uses the network at all — the test itself works offline.</td>
+  </tr>
+  <tr>
+    <td><code>com.google.android.gms.permission.AD_ID</code></td>
+    <td>Reading the advertising ID, for the ads described above. Android 13+ requires it to be declared.</td>
+  </tr>
+  <tr>
+    <td><code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_TOPICS</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code></td>
+    <td>Android Privacy Sandbox APIs, declared by the Google and Unity advertising SDKs.</td>
+  </tr>
+  <tr>
+    <td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td>
+    <td>Declared by the advertising SDKs, which schedule background work through WorkManager. Nothing in the app itself uses them.</td>
+  </tr>
+</table>
+</div>
+
+<p><strong>There is no storage permission.</strong> Saving your PDF report uses
+Android's Storage Access Framework, which grants access to the single file you
+chose and nothing else.</p>
+
+<p>What this app deliberately does <em>not</em> declare: location of any kind,
+Wi-Fi or Bluetooth scanning, contacts, calendar, microphone, camera, SMS, call
+logs, phone state, external storage, notifications, or "query all packages".
+Where a third-party advertising SDK tries to merge one of those into the build,
+it is stripped and the SDK dropped rather than shipped.</p>
+
+<h2>5. Health information</h2>
+<p>This app is a <strong>preliminary self-screening tool, not a medical device</strong>.
+It does not diagnose, treat or prevent any condition. Display hardware, ambient
+lighting and colour calibration vary between devices and can alter results. For
+medical evaluation, employment, licensing or aviation testing, consult a
+qualified optometrist or ophthalmologist.</p>
+<p>Your result is health-adjacent information, and it is treated accordingly: it
+is never stored, never transmitted, never used for advertising, and never shared
+with anyone. The only copy that can outlive the session is a PDF <em>you</em>
+chose to save, in a location <em>you</em> chose, under a name <em>you</em> chose.</p>
+
+<h2>6. Children</h2>
+<p>This is a general-audience app and is not directed at children under 13 (or the
+equivalent minimum age where you live). We do not knowingly collect personal
+information from children, and we do not target advertising on the basis of any
+information about a child.</p>
+<p>If you believe a child has provided information through this app, contact us at
+the address below and we will act on it — though, as described above, we hold no
+personal information about anyone.</p>
+
+<h2>7. Data retention and deletion</h2>
+<ul>
+  <li>We hold no data about you, so there is nothing for us to retain or delete.</li>
+  <li><strong>Your test results require no deletion</strong> — they are never written to storage in the first place.</li>
+  <li>To remove your stored preferences: uninstall the app.</li>
+  <li>To remove a saved PDF report: delete the file, like any other file on your device.</li>
+  <li>To remove the identifier our advertising partners use: delete your advertising ID in Android's settings, as described in section 3.</li>
+  <li>To stop personalised advertising: Settings → Privacy options inside the app.</li>
+</ul>
+<p>Data held by Google and the advertising partners is retained under their own
+policies, linked in section 2.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it. A materially
+different version will also be announced in the app's Google Play listing.</p>
+
+<h2>9. Contact</h2>
+<p>
+  Prasish Sharma<br>
+  Email: <a href="mailto:prasishsharma4@gmail.com">prasishsharma4@gmail.com</a><br>
+  Web: <a href="https://prasishsharma.com.np/">prasishsharma.com.np</a>
+</p>
+<p>We answer privacy questions at that address, including requests about
+children's data and questions about anything on this page.</p>
+
+<footer>
+  © 2026 Prasish Sharma. This policy covers Color Blind Test — Ishihara
+  (<code>com.mobileappmentor.color_blind_test_ishihara</code>) on Google Play.
+</footer>
+
+</div>
 </body>
-
 </html>
