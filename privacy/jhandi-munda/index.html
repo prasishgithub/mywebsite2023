@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Jhandi Munda</title>
+  <meta name="description"
+    content="Privacy policy for Jhandi Munda (Langur Burja), an offline board game (dice) for Android.">
+  <style>
+    :root {
+      --bg: #fbf8f3;
+      --panel: #ffffff;
+      --ink: #1c1a17;
+      --muted: #5c554c;
+      --rule: #e3ddd2;
+      --accent: #8a5a1e;
+      --accent-soft: #fdf4e4;
+      --code: #f4efe6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15130f;
+        --panel: #1e1b16;
+        --ink: #efe8dc;
+        --muted: #a89e90;
+        --rule: #332d25;
+        --accent: #d9a441;
+        --accent-soft: #241d12;
+        --code: #241f18;
+      }
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      padding: 0 1.25rem 5rem;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .wrap {
+      max-width: 52rem;
+      margin: 0 auto
+    }
+
+    header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 2px solid var(--rule);
+      margin-bottom: 2rem
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4.5vw, 2.2rem);
+      line-height: 1.25;
+      margin: 0 0 .5rem
+    }
+
+    .sub {
+      color: var(--muted);
+      margin: 0;
+      font-size: .95rem
+    }
+
+    .meta {
+      margin-top: 1.25rem;
+      font-size: .9rem;
+      color: var(--muted)
+    }
+
+    .meta b {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 2.5rem 0 .75rem;
+      padding-top: .5rem;
+      border-top: 1px solid var(--rule)
+    }
+
+    h2:first-of-type {
+      border-top: none
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin: 1.5rem 0 .5rem
+    }
+
+    p,
+    li {
+      color: var(--ink)
+    }
+
+    ul,
+    ol {
+      padding-left: 1.3rem
+    }
+
+    li {
+      margin: .4rem 0
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 2px
+    }
+
+    .callout {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+
+    .callout p {
+      margin: .4rem 0
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin: 1.25rem 0
+    }
+
+    .tablewrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1.25rem 0
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 34rem;
+      font-size: .94rem
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: .6rem .7rem;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top
+    }
+
+    th {
+      background: var(--accent-soft);
+      font-weight: 600;
+      white-space: nowrap
+    }
+
+    code {
+      background: var(--code);
+      padding: .12rem .38rem;
+      border-radius: 4px;
+      font-size: .88em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      word-break: break-word
+    }
+
+    .yes {
+      color: #b3261e;
+      font-weight: 600
+    }
+
+    .no {
+      color: #2e7d32;
+      font-weight: 600
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .yes {
+        color: #f29a92
+      }
+
+      .no {
+        color: #8fd694
+      }
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: .88rem
+    }
+
+    .todo {
+      background: #fff3cd;
+      color: #5c4708;
+      padding: .1rem .4rem;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: .85em
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .todo {
+        background: #4a3a10;
+        color: #ffd97a
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Privacy Policy for Jhandi Munda</h1>
+      <p class="sub">Also known as Langur Burja — a single-device board game, played with
+        dice, for Android. Free to play, supported by advertising.</p>
+      <p class="meta">
+        <b>Last updated:</b> 2 August 2026<br>
+        <b>Application:</b> Jhandi Munda (Langur Burja)<br>
+        <b>Package name:</b> <code>com.mobileappmentor.langur_burja</code><br>
+        <b>Category:</b> Games → Board<br>
+        <b>Developer:</b> Prasish Sharma<br>
+        <b>Contact:</b> <a href="mailto:prasishsharma4@gmail.com">prasishsharma4@gmail.com</a>
+      </p>
+    </header>
+
+    <div class="callout">
+      <p><b>The short version.</b> This game has no account, no login and no server of
+        its own. Everything you do in it — your players' names, your round history, your
+        settings and your unlocked styles — is stored only on your own device and is
+        never sent anywhere.</p>
+      <p>The one exception is advertising. The game shows ads from Google AdMob, and
+        the AdMob software collects information for that purpose, including your device's
+        advertising ID. That is the only data about you that leaves your phone, and it is
+        described in full below.</p>
+    </div>
+
+    <h2>1. Who this policy covers</h2>
+    <p>
+      This policy applies to the Android application <b>Jhandi Munda (Langur Burja)</b>,
+      published under the package name <code>com.mobileappmentor.langur_burja</code>, and
+      to nothing else. It explains what the app stores, what leaves your device, why, and
+      what you can do about it.
+    </p>
+    <p>
+      In this policy "we", "us" and "the developer" mean Prasish Sharma, the individual
+      developer of the app. There is no company, no staff and no third party with access
+      to anything described here.
+    </p>
+
+    <h2>2. What the app stores on your device</h2>
+    <p>
+      The app keeps a small amount of information in local storage on your phone. None of
+      it is transmitted, backed up to us, or visible to anyone but you. We cannot see any
+      of it, because there is nowhere for it to be sent to.
+    </p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>What is stored</th>
+            <th>Why</th>
+            <th>Leaves your device?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The name of the banker and your own name, as last used</td>
+            <td>So the app can pre-fill them the next time you set up a table, instead of asking you to type them again
+            </td>
+            <td class="no">No</td>
+          </tr>
+          <tr>
+            <td>Round history — up to the 200 most recent round results. Each entry holds the
+              player's name, the round number, the game mode, the dice that were rolled, what
+              was staked and returned, and the date and time the round was played.</td>
+            <td>The in-app history and statistics screens</td>
+            <td class="no">No</td>
+          </tr>
+          <tr>
+            <td>Settings — language, theme, sound, haptics, reduced motion, reminder on/off and reminder times</td>
+            <td>To keep the app the way you set it</td>
+            <td class="no">No</td>
+          </tr>
+          <tr>
+            <td>Unlocked and selected cosmetic items (dice, felt, backgrounds, token art, celebrations)</td>
+            <td>To remember what you own and what you are using</td>
+            <td class="no">No</td>
+          </tr>
+          <tr>
+            <td>In-game token counters and timers — your bonus pot, when you last claimed a free bag, how many rewarded
+              videos you have watched today</td>
+            <td>To run the free-token economy and to apply the app's own limits on how many ads it will show you</td>
+            <td class="no">No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <p style="margin:0"><b>Player names are personal to you, and they stay that way.</b>
+        They are typed by you, used only to label seats at a table on your own phone, and
+        written only to your device's own storage. Because the game is played by passing one
+        phone around, those names may be other people's — so it is worth being explicit: they
+        are never transmitted, never shared with advertisers, and never seen by the developer.
+        Nothing in the app requires a real name, and you are free to use nicknames.</p>
+    </div>
+
+    <h3>Time zone</h3>
+    <p>
+      If you turn on daily reminders, the app reads your device's time zone name (for
+      example <code>Asia/Kathmandu</code>) so that a reminder set for 8&nbsp;pm actually
+      arrives at 8&nbsp;pm. This is read from the operating system and used on your device
+      only. It is not stored on a server and not sent to us.
+    </p>
+
+    <h2>3. What the app does <em>not</em> do</h2>
+    <ul>
+      <li>No account, no sign-in, no profile.</li>
+      <li>No analytics or usage tracking of our own.</li>
+      <li>No crash reporting or diagnostics sent to us.</li>
+      <li>No server, backend, cloud save or leaderboard.</li>
+      <li>No access to your contacts, photos, files, messages, calendar, microphone, camera or precise location.</li>
+      <li>No in-app purchases and no payments of any kind.</li>
+      <li>No selling of personal information to anybody, ever.</li>
+    </ul>
+
+    <h2>4. Advertising — the data that does leave your device</h2>
+    <p>
+      The app is free and is paid for by advertising. It uses <b>Google AdMob</b> to show
+      two kinds of ad: full-screen ads between rounds, and rewarded videos that you choose
+      to watch in exchange for in-game tokens or decorative items.
+    </p>
+    <p>
+      Rewarded videos are never forced on you: the game is completely playable without
+      ever watching one, and if you run out of tokens the game will always give you more
+      so that a round can finish. To be precise about what they do unlock — most of the
+      decorative items in the style collection (dice faces, table felts, backgrounds,
+      token art and celebrations) can only be obtained by watching a rewarded video. Six
+      items, one in every category, are free from the start, so no part of the game is
+      ever unavailable to you. Watching is always your choice, and you are told what you
+      will receive before the video begins.
+    </p>
+    <p>
+      To select and measure those ads, Google's advertising software collects information
+      from your device. This happens inside Google's own code, not ours, and we never
+      receive a copy of it.
+    </p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Collected by Google AdMob</th>
+            <th>Purpose</th>
+            <th>Shared with Google?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Advertising ID (a resettable identifier assigned by Android)</td>
+            <td>Ad selection, frequency capping, measurement, fraud prevention</td>
+            <td class="yes">Yes</td>
+          </tr>
+          <tr>
+            <td>Approximate location, derived from your IP address (country / region level — <b>not</b> GPS)</td>
+            <td>Serving ads relevant to your country and complying with local law</td>
+            <td class="yes">Yes</td>
+          </tr>
+          <tr>
+            <td>Device and app information — device model, operating system version, language, app version</td>
+            <td>Ad compatibility and rendering</td>
+            <td class="yes">Yes</td>
+          </tr>
+          <tr>
+            <td>Ad interaction events — that an ad was requested, shown, watched or tapped</td>
+            <td>Measurement, billing and invalid-traffic detection</td>
+            <td class="yes">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Google acts as an independent controller of this data. Its handling is governed by
+      Google's own policies, not by ours:
+    </p>
+    <ul>
+      <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information
+          from sites or apps that use its services</a></li>
+      <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" rel="noopener">About AdMob and advertising IDs</a>
+      </li>
+    </ul>
+
+    <p>
+      Ad creatives are displayed inside a system web view supplied by Google's advertising
+      software. That web view is used to render the ad and for nothing else — the game
+      itself loads no web pages, and it downloads no images or content from the internet.
+    </p>
+
+    <h3>Ad content</h3>
+    <p>
+      Ads served in this app are limited to a maximum content rating of <b>PG</b> —
+      suitable for most audiences with parental guidance. This limit is set by the app
+      itself on every ad request.
+    </p>
+
+    <h2>5. Your choices about advertising</h2>
+
+    <h3>Everyone</h3>
+    <p>
+      Android lets you control the advertising ID directly, outside this app. On most
+      devices: <b>Settings → Google → Ads</b>, where you can <b>reset</b> your advertising
+      ID or <b>delete</b> it entirely. Deleting it stops apps, including this one, from
+      receiving a usable identifier for personalised advertising.
+    </p>
+
+    <h3>If you are in the European Economic Area, the United Kingdom or Switzerland</h3>
+    <p>
+      The first time the app requests an ad, it shows a consent form provided by Google's
+      User Messaging Platform, a Google-certified consent management platform. You choose
+      there whether to allow personalised advertising. Your choice is recorded by that
+      platform and respected on every later request.
+    </p>
+    <p>
+      <b>You can change your mind at any time.</b> Where a consent form applies to you, the
+      app shows an <b>“Ad privacy options”</b> row in the <b>About</b> panel — opened with
+      the ⓘ button on the bar at the bottom of the home screen — which reopens the same
+      form so you can review or withdraw your consent. That row is hidden for users outside
+      the regions where the form applies, because there would be nothing for it to open.
+    </p>
+    <p>
+      If you refuse consent, the app will not request personalised advertising. The game
+      remains fully playable.
+    </p>
+
+    <h2>6. Permissions the app requests, and why</h2>
+    <p>
+      Some of the permissions below are declared by the app itself; others are added
+      automatically by Google's advertising software when it is included. Both kinds are
+      listed, because both appear on the Google Play listing.
+    </p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why it is there</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td>
+            <td>Requesting and displaying ads. The game itself makes no network requests of any kind.</td>
+          </tr>
+          <tr>
+            <td><code>com.google.android.gms.permission.AD_ID</code></td>
+            <td>Added by Google's advertising software so it can read the advertising ID.</td>
+          </tr>
+          <tr>
+            <td>
+              <code>ACCESS_ADSERVICES_AD_ID</code><br><code>ACCESS_ADSERVICES_ATTRIBUTION</code><br><code>ACCESS_ADSERVICES_TOPICS</code>
+            </td>
+            <td>Added by Google's advertising software for Android's Privacy Sandbox advertising APIs.</td>
+          </tr>
+          <tr>
+            <td><code>FOREGROUND_SERVICE</code><br><code>WAKE_LOCK</code></td>
+            <td>Added by Google's advertising software so that video ads can play without interruption.</td>
+          </tr>
+          <tr>
+            <td><code>POST_NOTIFICATIONS</code></td>
+            <td>Optional daily play reminders. Only requested after you have finished a round, and only if you agree.
+              Notifications are scheduled entirely on your device — there is no push service and no server.</td>
+          </tr>
+          <tr>
+            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+            <td>Restores your reminder schedule after the phone restarts or the app updates. Nothing is sent anywhere.
+            </td>
+          </tr>
+          <tr>
+            <td><code>VIBRATE</code></td>
+            <td>Haptic feedback when dice land and tokens are collected. Can be turned off in the <b>Table feel</b>
+              panel on the home screen bar.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      The app deliberately does <b>not</b> request exact-alarm permissions, location
+      permissions, storage permissions, or access to contacts, camera or microphone.
+    </p>
+
+    <h2>7. Children</h2>
+    <p>
+      This app is not directed at children and is not part of Google Play's Designed for
+      Families programme. We do not knowingly collect any information from children, and
+      the app is not configured for child-directed treatment in its advertising settings.
+    </p>
+    <p>
+      The game is a traditional family board game and contains no real-money gambling — see
+      section 8. If you believe a child has provided personal information through this app,
+      please contact us at the address at the end of this policy and we will assist,
+      although in practice the app stores nothing that could identify a child and sends
+      nothing to us.
+    </p>
+
+    <h2>8. In-game tokens contain no real money</h2>
+    <p>
+      Jhandi Munda is a traditional festival board game, played with six dice, for fun. The tokens used in
+      the game are decorative counters only. They:
+    </p>
+    <ul>
+      <li>cannot be bought with real money;</li>
+      <li>cannot be exchanged, cashed out, transferred or redeemed for anything of value;</li>
+      <li>have no value of any kind outside the app.</li>
+    </ul>
+    <p>
+      There are no in-app purchases, no payments and no real-money gambling of any sort.
+      No financial or payment information is collected, because there is nothing to pay for.
+    </p>
+
+    <h2>9. Keeping and deleting your information</h2>
+    <p>
+      Because everything the game stores is on your device, you are in complete control of
+      it and can remove it at any time:
+    </p>
+    <ul>
+      <li><b>Clear your round history</b> — open the <b>History</b> deck on the home screen
+        and tap <b>Clear history</b>. Removes the stored round results and deliberately
+        leaves your names, settings and unlocked items alone.</li>
+      <li><b>Erase everything</b> — open the <b>About</b> panel with the ⓘ button on the
+        home screen bar and tap <b>Reset</b>. Deletes all locally stored data: names,
+        history, settings, unlocked items and token counters. This cannot be undone.</li>
+      <li><b>Uninstall the app</b> — removes all of its local data from your device.</li>
+      <li><b>Advertising data</b> — reset or delete your advertising ID in Android's
+        settings, as described in section 5. Requests about data already held by Google
+        should be directed to Google using the links in section 4.</li>
+    </ul>
+    <p>
+      Round history is capped at the 200 most recent entries; older entries are discarded
+      automatically as you play. We hold no copy of anything, so there is nothing for us to
+      delete on your behalf and no retention period on our side.
+    </p>
+    <p>
+      Note that if you have Android's backup feature enabled, your device may include the
+      app's local data in your own Google backup. That backup belongs to you and to Google
+      under your Google account settings; we have no access to it.
+    </p>
+
+    <h2>10. Security</h2>
+    <p>
+      Data stored by the app stays in the app's private storage area, which Android
+      protects from other apps on the device. Ad requests made by Google's advertising
+      software use encrypted HTTPS connections.
+    </p>
+    <p>
+      Because we operate no servers and receive no data, there is no database of ours that
+      could be breached.
+    </p>
+
+    <h2>11. International users</h2>
+    <p>
+      The app is available worldwide. Since the app sends us nothing, no international
+      transfer of data to us takes place. Data collected by Google's advertising software
+      may be processed in countries other than your own, in accordance with Google's own
+      policies linked in section 4.
+    </p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>
+      If the app changes in a way that affects this policy — for example if a new
+      third-party service is added — this page will be updated and the “Last updated” date
+      at the top will change. Significant changes will also be reflected in the app's Play
+      Store listing. Please check this page from time to time.
+    </p>
+
+    <h2>13. Contact</h2>
+    <p>
+      Questions, corrections or requests about this policy or the app:
+    </p>
+    <p>
+      <b>Prasish Sharma</b><br>
+      <a href="mailto:prasishsharma4@gmail.com">prasishsharma4@gmail.com</a>
+    </p>
+    <p>
+      You can also reach us from inside the app: open the <b>About</b> panel with the ⓘ
+      button on the home screen bar and tap <b>Report a problem</b>.
+    </p>
+
+    <footer>
+      <p>
+        Privacy policy for <b>Jhandi Munda (Langur Burja)</b> ·
+        <code>com.mobileappmentor.langur_burja</code>
+      </p>
+      <p>
+        © 2026 Prasish Sharma. All rights reserved.
+      </p>
+      <p>
+        Jhandi Munda — also called Langur Burja, Jhanda Burja, Khor Khore,
+        Dand-Munda or Crown &amp; Anchor — is a traditional game in the public
+        domain. This notice covers the software, artwork and text of this
+        application and page, not the game itself.
+      </p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

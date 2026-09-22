@@ -1,0 +1,4 @@
+Contact: mailto:prasishsharma3@gmail.com
+Expires: 2027-09-22T00:00:00.000Z
+Preferred-Languages: en, ne
+Canonical: https://prasishsharma.com.np/.well-known/security.txt

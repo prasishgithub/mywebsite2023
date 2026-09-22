@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://people.umass.edu/avsingh/</loc>
-  <lastmod>2020-08-07T07:36:51+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://prasishsharma.com.np/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://prasishsharma.com.np/privacy-policy/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://prasishsharma.com.np/privacy-policy-kids/</loc><lastmod>2026-06-29</lastmod></url>
+  <url><loc>https://prasishsharma.com.np/privacy/color-blind-test/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://prasishsharma.com.np/privacy/color-cards-blitz/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://prasishsharma.com.np/privacy/jhandi-munda/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://prasishsharma.com.np/privacy/pickup-lines/</loc></url>
 </urlset>
