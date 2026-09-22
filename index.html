@@ -292,46 +292,190 @@ Introducing the FlirtGPT-Pick Up Lines App, your ultimate flirting companion des
             margin-top: 20px;
             text-align: center;
         }
+
+        .policy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .policy-table th,
+        .policy-table td {
+            text-align: left;
+            vertical-align: top;
+            padding: 8px 10px;
+            border-bottom: 1px solid #eee;
+            color: #666;
+            font-size: 15px;
+        }
+
+        .policy-table th {
+            color: #333;
+        }
+
+        .policy-note {
+            border-left: 3px solid #5b5bd6;
+            background: #f7f8fa;
+            padding: 12px 16px;
+            margin: 18px 0;
+        }
+
+        .policy-note p {
+            margin: 0;
+        }
+
+        .policy-scroll {
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p>We understand the importance of your privacy and take great care to protect your information for every product and service we offer. This is what we collect, how we handle it, and the measures we take to keep it safe.</p>
 
-        <h2>Data We Collect</h2>
-        <p>We may collect personal information such as your name, email, phone number, and address, as well as business information. This is so we can keep you informed about the latest updates and new products. Please rest assured that we never sell your information under any circumstances.</p>
+        <p><strong>Developer:</strong> Mobile App Mentor<br>
+        <strong>Applies to:</strong> every app published by Mobile App Mentor on Google Play<br>
+        <strong>Last updated:</strong> 22 September 2026</p>
 
-        <h2>Security</h2>
-        <p>As a tech enthusiast, we strive to provide you with the highest level of security possible. However, please keep in mind that no method of transmitting information over the internet or storing it electronically can be 100% secure and reliable. Therefore, we cannot guarantee absolute security.</p>
+        <p><strong>The short version.</strong> We run no servers, there are no accounts, and we receive nothing about you. Everything our apps store stays on your device and is deleted when you uninstall.</p>
 
-        <h2>Third-Party Ads Integration</h2>
-        <p>We might show you ads through third-party advertising services. These services may gather details about your device, location, and web browsing history, including when you visit our site or other websites and apps.</p>
+        <p>Our apps are free and are paid for by advertising. Advertising is the one thing that sends data off your device: Google AdMob and the advertising partners that bid through it collect an advertising identifier and related technical information in order to show, measure and protect the ads. That is the whole of it, and the rest of this page describes it in full.</p>
 
-        <p>Third-party services include:</p>
+        <h2>1. What we collect ourselves</h2>
+        <p><strong>Nothing.</strong></p>
+        <p>We operate no servers, run no analytics, and have no way to receive data about you. There is no sign-in, no account, no profile and no cloud backup. Anything an app of ours remembers — your settings and preferences — is written to that app's own private storage on your device.</p>
+        <p>We cannot read it. It is never transmitted anywhere. Uninstalling the app removes all of it. We do not sell data, because we do not have any.</p>
+
+        <h3>Colour vision test results are never stored</h3>
+        <p>This is stronger than "kept private on your device". Our Color Blind Test app has no history feature, and a completed test is never written to storage of any kind. Your answers, your score, your classification and the plate-by-plate breakdown exist only while the result is on screen, and are discarded when you leave it. There is no file to find, no database to read, and nothing to delete.</p>
+        <p>If you choose to save your result as a PDF, the file is built entirely on your device and written to the folder you pick, under the filename you choose, using Android's system file picker. It is never uploaded anywhere. If you then share it, it goes wherever <em>you</em> send it and nowhere else.</p>
+
+        <h3>Sensors</h3>
+        <p>Where a device has an ambient light sensor, our Color Blind Test app takes a single reading when a test starts, to note whether the room was bright enough for a reliable result. The value annotates that result and is never stored or transmitted. No permission is required for this, and none is requested.</p>
+
+        <h2>2. What our advertising partners collect</h2>
+        <p>Our apps show ads through Google AdMob. AdMob runs an auction for each ad slot. Where an app uses mediation, the following partners may take part in that auction and receive data as part of it:</p>
         <ul>
-             <ul>
-        <li><a href="https://developers.google.com/android" target="_blank">Google Play Services</a></li>
-        <li><a href="https://firebase.google.com/products/analytics" target="_blank">Google Analytics for Firebase</a></li>
-        <li><a href="https://admob.google.com/" target="_blank">AdMob</a></li>
-        <li><a href="https://firebase.google.com/products/crashlytics" target="_blank">Firebase Crashlytics</a></li>
-        <li><a href="https://developers.facebook.com/products/facebook" target="_blank">Facebook</a></li>
-    </ul>
+            <li>Google AdMob / Google Ads (always)</li>
+            <li>Unity Ads</li>
+            <li>ironSource (Unity LevelPlay)</li>
+            <li>InMobi</li>
+            <li>Liftoff Monetize (Vungle)</li>
+            <li>Meta Audience Network</li>
         </ul>
+        <p>Not every app uses every partner; each app's Google Play Data safety section is the authoritative statement for that app.</p>
 
-        <h2>Changes to This Privacy Policy</h2>
-        <p>Our Privacy Policy may be updated periodically, so we recommend that you check this page regularly for any changes. We will inform you of any updates by posting the new Privacy Policy on this page. This policy will be effective starting from November 7, 2023.</p>
+        <p>Through the Google Mobile Ads SDK and these partners, the following is collected from your device and shared with them:</p>
+
+        <div class="policy-scroll">
+        <table class="policy-table">
+            <tr><th>What</th><th>Why it is collected</th></tr>
+            <tr>
+                <td>Device or other identifiers — your Android advertising ID (AAID), app set ID, and similar SDK-level identifiers</td>
+                <td>Selecting and showing ads, capping how often you see the same ad, measuring ads, and detecting ad fraud</td>
+            </tr>
+            <tr>
+                <td>Approximate location — estimated from your IP address, never from your device's location sensors</td>
+                <td>Showing ads that are legal and relevant in your country or region, and detecting ad fraud</td>
+            </tr>
+            <tr>
+                <td>App interactions — app opens, ad impressions, ad clicks, session length</td>
+                <td>Showing and measuring ads</td>
+            </tr>
+            <tr>
+                <td>Diagnostics — crash logs, performance data, device model, OS version, screen size, language, network type</td>
+                <td>Rendering ads correctly, keeping the SDKs working, and detecting ad fraud</td>
+            </tr>
+        </table>
+        </div>
+
+        <p>All of it is sent over an encrypted (HTTPS/TLS) connection.</p>
+
+        <div class="policy-note">
+            <p><strong>Your test result is not part of this.</strong> No advertising partner receives your answers, your score, your classification, or any indication of whether a colour vision deficiency was found. Ads are not targeted on the basis of your result, and the result is never sent anywhere — it is not stored for long enough to be.</p>
+        </div>
+
+        <p>None of our apps request a location permission. They cannot read your GPS, your Wi-Fi networks, your Bluetooth surroundings or your precise location, and they do not ask to. The "approximate location" above is only the rough region your IP address implies — the same thing every website you visit can see.</p>
+
+        <p>For what Google does with this data, see <a href="https://policies.google.com/technologies/partner-sites" target="_blank">How Google uses information from sites or apps that use our services</a> and <a href="https://support.google.com/admob/answer/9012903" target="_blank">Google's advertising partners</a>. Each partner's own policy: <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity / ironSource</a>, <a href="https://www.inmobi.com/privacy-policy" target="_blank">InMobi</a>, <a href="https://liftoff.io/privacy-policy/" target="_blank">Liftoff Monetize</a>, <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta</a>.</p>
+
+        <h2>3. Your choices and your rights</h2>
+
+        <h3>Consent</h3>
+        <p>Where the law requires it — the European Economic Area, the United Kingdom, Switzerland, and several US states — our apps show Google's certified consent form (the Google User Messaging Platform, an IAB TCF v2 Consent Management Platform) the first time you run them. You decide there whether your data may be used for personalised advertising, and nothing is requested from any ad network until you have.</p>
+        <p>Your decision is forwarded to every advertising partner listed above, not just to Google. If you refuse, the app keeps working and you will see non-personalised ads instead.</p>
+        <p>You can change that decision at any time, from inside the app, at <strong>Settings &rarr; Privacy options</strong>. Where a form is required by law, that row is always present, and changing your answer takes effect immediately.</p>
+
+        <h3>Your advertising ID</h3>
+        <p>Android lets you reset your advertising ID, or delete it altogether, from <strong>Settings &rarr; Privacy &rarr; Ads</strong> (<strong>Settings &rarr; Google &rarr; Ads</strong> on some devices). Deleting it stops our apps and their advertising partners receiving it at all.</p>
+
+        <h3>US state privacy rights</h3>
+        <p>Where you have a right to opt out of the "sale" or "sharing" of your personal information, the consent form above records it and we forward that signal to every advertising partner that accepts one. We do not sell or share data ourselves, because we never receive any.</p>
+
+        <h3>EEA / UK rights</h3>
+        <p>Because we receive no personal data, we are not in a position to access, correct, port or erase anything about you — there is nothing held. For the data processed by Google and the advertising partners above, those companies are the controllers and their own policies (linked in section 2) describe how to exercise your rights with them. Withdrawing consent through Settings &rarr; Privacy options stops personalised processing for the future.</p>
+
+        <h2>4. Permissions our apps ask for</h2>
+        <p>Our apps use only the permissions the features they ship actually need. Our Color Blind Test app declares exactly the following, and nothing else:</p>
+
+        <div class="policy-scroll">
+        <table class="policy-table">
+            <tr><th>Permission</th><th>What it is for</th></tr>
+            <tr>
+                <td>INTERNET, ACCESS_NETWORK_STATE</td>
+                <td>Loading ads and the consent form. Nothing else uses the network — the test itself works offline.</td>
+            </tr>
+            <tr>
+                <td>com.google.android.gms.permission.AD_ID</td>
+                <td>Reading the advertising ID, for the ads described above. Android 13+ requires it to be declared.</td>
+            </tr>
+            <tr>
+                <td>ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_TOPICS, ACCESS_ADSERVICES_ATTRIBUTION</td>
+                <td>Android Privacy Sandbox APIs, declared by the Google and Unity advertising SDKs.</td>
+            </tr>
+            <tr>
+                <td>WAKE_LOCK, FOREGROUND_SERVICE</td>
+                <td>Declared by the advertising SDKs, which schedule background work through WorkManager. Nothing in the app itself uses them.</td>
+            </tr>
+        </table>
+        </div>
+
+        <p><strong>There is no storage permission.</strong> Saving a PDF report uses Android's Storage Access Framework, which grants access to the single file you chose and nothing else.</p>
+
+        <p>What we deliberately do not declare, in any app: location of any kind, Wi-Fi or Bluetooth scanning, contacts, calendar, microphone, camera, SMS, call logs, phone state, external storage, or "query all packages". Where a third-party advertising SDK tries to merge one of those into our build, we strip it and drop the SDK rather than ship it.</p>
+
+        <h2>5. Health information</h2>
+        <p>Our Color Blind Test app is a <strong>preliminary self-screening tool, not a medical device</strong>. It does not diagnose, treat or prevent any condition. Display hardware, ambient lighting and colour calibration vary between devices and can alter results. For medical evaluation, employment, licensing or aviation testing, consult a qualified optometrist or ophthalmologist.</p>
+        <p>Your result is health-adjacent information, and it is treated accordingly: it is never stored, never transmitted, never used for advertising, and never shared with anyone. The only copy that can outlive the session is a PDF <em>you</em> chose to save, in a location <em>you</em> chose, under a name <em>you</em> chose.</p>
+
+        <h2>6. Children</h2>
+        <p>Our apps are general-audience apps and are not directed at children under 13 (or the equivalent minimum age where you live). We do not knowingly collect personal information from children, and we do not target advertising on the basis of any information about a child.</p>
+        <p>If you believe a child has provided information through one of our apps, contact us at the address below and we will act on it — though, as described above, we hold no personal information about anyone.</p>
+
+        <h2>7. Data retention and deletion</h2>
+        <ul>
+            <li>We hold no data about you, so there is nothing for us to retain or to delete.</li>
+            <li><strong>Colour vision test results require no deletion</strong> — they are never written to storage in the first place.</li>
+            <li>To remove your stored preferences: uninstall the app.</li>
+            <li>To remove a saved PDF report: delete the file, like any other file on your device.</li>
+            <li>To remove the identifier our advertising partners use: delete your advertising ID in Android's settings, as described in section 3.</li>
+            <li>To stop personalised advertising: Settings &rarr; Privacy options inside the app.</li>
+        </ul>
+        <p>Data held by Google and the advertising partners is retained under their own policies, linked in section 2.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>If this policy changes, the date at the top changes with it. A materially different version will also be announced in the affected apps' Google Play listings.</p>
 
         <h2>Contact Us</h2>
-        <p>We are always happy to hear from you, whether you have questions or suggestions about our Privacy Policy. Please don’t hesitate to reach out to us at the following contact information:</p>
+        <p>We are always happy to hear from you, whether you have questions or suggestions about our Privacy Policy. Please don't hesitate to reach out to us at the following contact information:</p>
 
         <ul>
             <li>Email: <a href="mailto:mobileappmentor@gmail.com">Click Here to Email the Developer</a></li>
             <li>Address: <a href="https://www.google.com/maps?q=Pokhara-33700,Kaski,Nepal" target="_blank">Address: Pokhara-33700, Kaski, Nepal</a></li>
         </ul>
     </div>
- 
+
 
     <hr>
      </section>
